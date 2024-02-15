@@ -1,12 +1,21 @@
 html {  
     scroll-behavior: smooth;  
 }
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+    top: 100rem;
+    height: 17rem
+}
 h1 {
-    position: relative;
+    position: absolute;
     color: black;
     font-size: 3.5rem;
     text-align: center;
-    top: -1rem;
+    top: 15rem;
+    left: 75rem;
 }
 div.dropdown {
     position: relative;
@@ -16,17 +25,21 @@ body {
     background-color: tan;
     font-family: 'Oswald', sans-serif;
 }
+#start {
+    padding-top: 50rem;
+    text-align: center;
+    padding-bottom: 10rem;
+}
 p {
     font-size: 4rem;
-    text-align: center;
-    padding-top: 12rem;
     margin: 0%;
+    text-align: center;
 }
 button {
     border: none;
     background-color: inherit;
 }
-img {
+.money {
     position: absolute;
     padding-right: 5rem;
     top: 10rem;
@@ -40,7 +53,7 @@ img {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     top: 10rem;
-    right: 103rem;
+    right: 143rem;
 }
 .dropdown-inside a {
     color: black;
@@ -64,9 +77,11 @@ body {
      }
 }
 .actualinfo {
-    padding: 0%;
+    position: relative;
+    padding: 7%;
     font-size: 3rem;
     font-family: 'Lato', sans-serif;
+    text-align: center;
 }
 @media (hover: none) {
     .dropdown-inside {
