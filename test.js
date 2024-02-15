@@ -6,3 +6,5 @@ document.addEventListener('DOMContentLoaded', function() {
     targetElement.scrollIntoView({ behavior: 'smooth' });
   });
 });
+
+// test
