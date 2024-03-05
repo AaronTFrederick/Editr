@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-  var link = document.getElementById('button');
+  var link1 = document.getElementById('1');
   var targetElement = document.getElementById('start');
 
-  link.addEventListener('click', function() {
+  link1.addEventListener('click', function() {
+    event.preventDefault();
+    var href = this.getAttribute('href');
     targetElement.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
-// test
