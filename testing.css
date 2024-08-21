@@ -107,6 +107,7 @@ body {
     font-family: 'Lato', sans-serif;
     padding-left: 30rem;
     padding-right: 30rem;
+    padding-bottom: 10rem;
 }
 .actualinfo {
     position: relative;
@@ -114,6 +115,9 @@ body {
     font-size: 3rem;
     font-family: 'Lato', sans-serif;
     text-align: center;
+}
+#hyperlink {
+    font-size: 3rem;
 }
 @media (hover: none) {
     .dropdown-inside {
