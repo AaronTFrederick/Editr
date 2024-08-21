@@ -73,7 +73,7 @@ button {
     text-decoration: none;
     display: block;
 }
-.dropdown:hover .dropdown-inside {display: block;}
+.money a:hover {height: 5rem;}
 .dropdown-inside a:hover {background-color: #ddd;}
 body {
     animation: fadeInAnimation ease .5s;

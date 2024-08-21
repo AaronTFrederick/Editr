@@ -21,12 +21,12 @@
   <script src="test.js"></script>
   <div class="dropdown">
     <button class="dropbtn" id="button">
-      <img class="money" src="money-with-wings_1f4b8.png">
+      <img onClick="toggleDropdown()" class="money" src="money-with-wings_1f4b8.png">
     </button>
-    <div class="dropdown-inside">
+    <div class="dropdown-inside" id="dropdowncontent">
       <a href="#" id="1">What Is Editr?</a>
       <a href="#" id="2">Why Join?</a>
-      <a href="#" id="3">How Would I get Clients?</a>
+      <a href="#" id="3">How Would I Get Clients?</a>
       <a target="_blank" onClick="discordserver()" href="#" id="4">Discord Server</a>
     </div>
   </div>
@@ -35,13 +35,25 @@
       location.assign("https://discord.gg/qsXfXRBK")
     }
     </script>
+  <script>
+    function toggleDropdown() {
+    var dropdown = document.getElementById("dropdowncontent");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+    
+}
+
+  </script>
   <img class="logo" src="editr.png">
   <p class="actualinfo">Your One Stop For ALL Video Editing</p>
   <p id="start">What Is Editr?</p>
   <p id="startinfo">Editr is a community for editors to find clients (Vice-Versa too). It's free to join and will stay free forever!</p>
   <p id="join">Why Join?</p>
   <p id="joininfo">Why not? You get to join a group of like-minded people who will help you improve your editing skills, while also helping you find clients so you can get paid!</p>
-  <p id="paid">How Would I get Clients?</p>
+  <p id="paid">How Would I Get Clients?</p>
   <p id="paidinfo">First, join my discord server, that is where the entire community is. Second, locate the "#apply-for-editr" channel and apply using the google form posted there. Third, wait! I will look at all applications and see if you are qualified to edit for others, if you are accepted, you will have 24 hours to respond to my direct message on discord, if you fail to do so, then you will have to apply again. If you are accepted, Congrats! I will find you a client to work with ASAP.</p>
   <div style="text-align:center">    
     <a id="hyperlink" href="https://discord.gg/qsXfXRBK" target="_blank">Discord Server</a>
