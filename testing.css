@@ -53,10 +53,10 @@ button {
 }
 .money {
     position: absolute;
-    padding-right: 5rem;
     top: 10rem;
     height: 3rem;
-    padding-bottom: 8rem;
+    animation: startjiggle 0.5s ease;
+    padding-right: 2rem;
 }
 .dropdown-inside {
     display: none;
@@ -73,7 +73,51 @@ button {
     text-decoration: none;
     display: block;
 }
-.money a:hover {height: 5rem;}
+@keyframes startjiggle {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-5px);
+    }
+    20% {
+        transform: translateX(5px);
+    }
+    30% {
+        transform: translateX(-3px);
+        height: 5rem;
+    }
+    40% {
+        transform: translateX(3px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+}
+@keyframes jiggleAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-5px);
+    }
+    20% {
+        transform: translateX(5px);
+    }
+    30% {
+        transform: translateX(-3px);
+        height: 5rem;
+    }
+    40% {
+        transform: translateX(3px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+}
+.money:hover {
+    animation: jiggleAnimation 0.5s ease;
+}
 .dropdown-inside a:hover {background-color: #ddd;}
 body {
     animation: fadeInAnimation ease .5s;
@@ -126,3 +170,7 @@ body {
         right: 103rem;
     }
 }
+.testbutton {
+    top: 10rem;
+}
+
