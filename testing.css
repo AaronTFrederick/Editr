@@ -54,7 +54,7 @@ button {
 .money {
     position: absolute;
     top: 10rem;
-    height: 3rem;
+    height: 5rem;
     animation: startjiggle 0.5s ease;
     padding-right: 2rem;
 }
@@ -85,7 +85,7 @@ button {
     }
     30% {
         transform: translateX(-3px);
-        height: 5rem;
+        height: 6rem;
     }
     40% {
         transform: translateX(3px);
@@ -106,7 +106,7 @@ button {
     }
     30% {
         transform: translateX(-3px);
-        height: 5rem;
+        height: 6rem;
     }
     40% {
         transform: translateX(3px);
@@ -170,7 +170,3 @@ body {
         right: 103rem;
     }
 }
-.testbutton {
-    top: 10rem;
-}
-
