@@ -73,6 +73,14 @@ p {
     text-decoration: none;
     display: block;
 }
+#discordlogo {
+    width: 7rem;
+    height: auto;
+}
+.discordlogo {
+    width: 7rem;
+    height: auto;
+}
 @keyframes startjiggle {
     0% {
         transform: translateX(0);
@@ -167,7 +175,4 @@ body {
         right: 103rem;
     }
 }
-#discordlogo {
-    width: 100px;
-    height: auto;
-}
+
