@@ -47,7 +47,7 @@ p {
     margin: 0%;
     text-align: center;
 }
-button {
+.buttondrp {
     border: none;
     background-color: inherit;
 }
@@ -155,9 +155,6 @@ body {
     font-family: 'Lato', sans-serif;
     text-align: center;
 }
-#hyperlink {
-    font-size: 3rem;
-}
 @media (hover: none) {
     .dropdown-inside {
         display: block;
@@ -169,4 +166,7 @@ body {
         top: 10rem;
         right: 103rem;
     }
+}
+#discordlogo {
+    width: 100px;
 }
