@@ -17,7 +17,7 @@
   <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 </head>
 
-<body>
+<body id="bodytest">
   <script src="test.js"></script>
   <div class="dropdown">
     <button class="dropbtn" id="buttondrp">
@@ -34,18 +34,29 @@
     function discordserver() {
       location.assign("https://discord.gg/qsXfXRBK")
     }
-    </script>
-  <script>
-    function toggleDropdown() {
-    var dropdown = document.getElementById("dropdowncontent");
-    if (dropdown.style.display === "block") {
-        dropdown.style.display = "none";
-    } else {
-        dropdown.style.display = "block";
-    }
-    
-}
 
+    function toggleDropdown() {
+      var dropdown = document.getElementById("dropdowncontent");
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+    }
+
+    function closeDropdown() {
+      var dropdown = document.getElementById("dropdowncontent");
+      dropdown.style.display = "none";
+    }
+
+    // Add event listener to document
+    document.addEventListener("click", function(event) {
+      var dropdown = document.getElementById("dropdowncontent");
+      var button = document.getElementById("buttondrp");
+      if (event.target !== button && event.target.parentNode !== button && event.target !== dropdown && !dropdown.contains(event.target)) {
+        closeDropdown();
+      }
+    });
   </script>
   <img class="logo" src="editr.png">
   <p class="actualinfo">Your One Stop For ALL Video Editing</p>
@@ -61,6 +72,7 @@
     </a>
 </div>
 </body>
+<script>console.log("test!");</script>
 
 
 </html>
