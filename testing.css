@@ -55,7 +55,6 @@ p {
     position: absolute;
     top: 10rem;
     height: 5rem;
-    animation: startjiggle 0.5s ease;
     padding-right: 2rem;
 }
 .dropdown-inside {
@@ -80,51 +79,7 @@ p {
 .discordlogo {
     width: 7rem;
     height: auto;
-}
-@keyframes startjiggle {
-    0% {
-        transform: translateX(0);
-    }
-    10% {
-        transform: translateX(-5px);
-    }
-    20% {
-        transform: translateX(5px);
-    }
-    30% {
-        transform: translateX(-3px);
-        height: 6rem;
-    }
-    40% {
-        transform: translateX(3px);
-    }
-    50% {
-        transform: translateX(0);
-    }
-}
-@keyframes jiggleAnimation {
-    0% {
-        transform: translateX(0);
-    }
-    10% {
-        transform: translateX(-5px);
-    }
-    20% {
-        transform: translateX(5px);
-    }
-    30% {
-        transform: translateX(-3px);
-        height: 6rem;
-    }
-    40% {
-        transform: translateX(3px);
-    }
-    50% {
-        transform: translateX(0);
-    }
-}
-.money:hover {
-    animation: jiggleAnimation 0.5s ease;
+    padding-bottom: 3rem;
 }
 .dropdown-inside a:hover {background-color: #ddd;}
 body {
@@ -144,17 +99,23 @@ body {
     font-size: 3rem;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    max-width: 960px;
+    margin: auto;
 }
 #joininfo {
     font-size: 3rem;
     text-align: center;
     font-family: 'Lato', sans-serif;
+    max-width: 960px;
+    margin: auto;
 }
 #paidinfo {
     font-size: 3rem;
     text-align: center;
     font-family: 'Lato', sans-serif;
     padding-bottom: 10rem;
+    max-width: 960px;
+    margin: auto;
 }
 .actualinfo {
     position: relative;
